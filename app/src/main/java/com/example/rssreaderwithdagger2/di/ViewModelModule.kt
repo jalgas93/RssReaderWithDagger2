@@ -27,6 +27,6 @@ abstract class ViewModelModule {
     AnnotationTarget.PROPERTY_SETTER,
     AnnotationTarget.PROPERTY_GETTER
 )
-@Retention(AnnotationRetention.RUNTIME)
+@Retention
 @MapKey
 annotation class ViewModelKey(val value: KClass<out ViewModel>)
